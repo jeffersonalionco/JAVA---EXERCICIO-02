@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.biblioteca.biblioteca;
 
 /**
- *
- * @author ti01.mtz
+ * 
+ * @author Jefferson Alionco
  */
+
+ 
 public class Livro {
     private String titulo;
     private String genero ;
@@ -15,6 +12,17 @@ public class Livro {
     private boolean estaDisponivel;
 
     
+    // Criando um construtor para adicionar dados mais facilmente!
+    public Livro(String titulo, String genero, String anoPublic, boolean estaDisponivel){
+            this.titulo = titulo;
+            this.genero = genero;
+            this.anoPublic = anoPublic;
+            this.estaDisponivel = estaDisponivel;
+    }
+
+
+
+    // Os metodos getters e setters
     public String getTitulo(){
         return titulo;
     }
@@ -31,7 +39,7 @@ public class Livro {
     }
 
     
-    public String anoPublic(){
+    public String getAnoPublic(){
         return anoPublic;
     }
     public void setAnoPublic(String anoPublic){
@@ -42,6 +50,8 @@ public class Livro {
     public boolean getEstaDisponivel(){
         return estaDisponivel;
     }
+
+
     public void setEstaDisponivel(boolean estaDisponivel){
         this.estaDisponivel = estaDisponivel;
     }

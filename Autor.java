@@ -1,14 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.biblioteca.biblioteca.Autor;
-
 /**
- *
- * @author ti01.mtz
+ * 
+ * @author Jefferson Alionco
  */
 
+ 
 public class Autor {
     private String nome;
     private String nascionalidade;
@@ -18,6 +13,17 @@ public class Autor {
     private String cidadeNasc;
 
     
+    // Criando metodo construtor para apoiar na hora de adicionar dados
+    public Autor(String nome, String nascionalidade, String datNasc, boolean estaVivo, String datObto, String cidadeNasc) {
+            this.nome = nome;
+            this.nascionalidade = nascionalidade;
+            this.datNasc = datNasc;
+            this.estaVivo = estaVivo;
+            this.datObto = datObto;
+            this.cidadeNasc = cidadeNasc;
+    }
+
+
     // Metodos Getters
     public String getNome() {
         return nome;
